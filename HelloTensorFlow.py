@@ -1,3 +1,4 @@
+
 """
 @auther: Amin Golnari
 Shahrood University of Technology - IRAN
@@ -62,6 +63,7 @@ with tf.Session() as Sess:
 	plt.ylabel('Accuracy')
 	plt.title('MNIST')
 	plt.grid()
+	plt.legend()
 	plt.show()
 	Evaluate = Accuracy.eval({Input: Data.test.images, Label: Data.test.labels})
 	print("# Test Accuracy: %.2f" % (Evaluate*100))
