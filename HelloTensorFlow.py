@@ -65,7 +65,7 @@ with tf.Session() as Sess:
 		train.append(Accuracy.eval({Input: Data.train.images, Label: Data.train.labels}) * 100)
 		val.append(Accuracy.eval({Input: Data.validation.images, Label: Data.validation.labels}) * 100)
 		# Display Informations
-		print('# Epoch : %d/%d | Test Accuracy : %.2f | Validation Accuracy : %.2f | Cost : %.6f | Time : %.4fs' %
+		print('# Epoch : %d/%d | Train Accuracy : %.2f | Validation Accuracy : %.2f | Cost : %.6f | Time : %.4fs' %
 		      (epoch+1,
 		       Epochs,
 		       train[epoch],
